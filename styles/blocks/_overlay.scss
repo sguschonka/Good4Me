@@ -35,6 +35,9 @@
         list-style: none;
         padding: 0;
         margin-top: 40px;
+        display: flex;
+        row-gap: 50px;
+        flex-direction: column;
       }
 
       .link--colored {

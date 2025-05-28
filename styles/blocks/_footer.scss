@@ -23,6 +23,7 @@
     }
 
     .footer__navs-container {
+      margin-bottom: 15px;
 
       .footer__navs-title {
         margin-bottom: 13px;
@@ -120,25 +121,35 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    @include tablet {
+    @include desktop {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin-inline: 20px;
     }
 
-    .etc__company-name-colored {
-      color: var(--orange-primary-color);
+    .etc__company-license {
+      @include desktop {
+        margin-bottom: 10px;
+      }
+
+      .etc__company-name-colored {
+        color: var(--orange-primary-color);
+      }
     }
     
     .etc__soc1als-list {
       display: flex;
       gap: 20px;
-    }
 
-    .etc-soc1al-item {
-      
-      .soc1al__link {
-        padding: 0px;
+      @include desktop {
+        margin-bottom: 10px;
       }
+    }
+    
+    .soc1al__link {
+      display: block;
+      padding: 10px;
     }
   }
 }

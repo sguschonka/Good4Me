@@ -49,6 +49,7 @@
         top: 25px;
 
         @include tablet {
+            justify-content: space-around;
             top: 150px;
         }
 

@@ -19,12 +19,18 @@
 
     .news-card__button {
         padding-left: 0px;
+        text-align: center;
 
         @include mobile {
             padding-left: 30px;
         }
-    }
 
+        .news-button__image {
+            position: relative;
+            top: -2px;
+        }
+    }
+    
     .news__content {
         display: flex;
         gap: 75px;

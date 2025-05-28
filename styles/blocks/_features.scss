@@ -9,6 +9,7 @@
 
         @include mobile {
             margin-bottom: 40px;
+            @include fluid-text(30, 24)
         }
     }
 
@@ -28,6 +29,11 @@
             text-align: center;
             width: 370px;
             height: 370px;
+
+            @include mobile {
+                width: 300px;
+                height: 300px;
+            }
 
             .feature__image {
                 margin-top: 44px;
