@@ -1,0 +1,54 @@
+.features {
+    margin-bottom: 105px;
+
+    .features__title {
+        text-align: center;
+        font-weight: 600;
+        line-height: 152%;
+        margin-bottom: 90px;
+
+        @include mobile {
+            margin-bottom: 40px;
+        }
+    }
+
+    .features__container {
+        @include mobile {
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 55px;
+
+        .feature__card {
+            text-align: center;
+            width: 370px;
+            height: 370px;
+
+            .feature__image {
+                margin-top: 44px;
+            }
+
+            .feature__title {
+                margin-top: 33px;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 113%;
+                margin-bottom: 16px;
+            }
+
+            .feature__subtitle {
+                color: var(--grey-nobel-color);
+            }
+        }
+    }
+
+    .card-colored {
+        background: var(--pink-primary-color);
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    }
+}

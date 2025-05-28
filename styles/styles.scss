@@ -1,0 +1,118 @@
+@import
+    'variables',
+    'mixins',
+    'media'
+;
+
+p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    @include fluid-text(16, 14);
+    line-height: 143%;
+    color: var(--grey-secondary-color);
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    @include fluid-text(66, 44);
+    line-height: 104%;;
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    @include fluid-text(40, 38);
+    line-height: 117%;
+}
+
+h3 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    @include fluid-text(34, 24);
+    line-height: 133%;
+}
+
+h4 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    @include fluid-text(26, 16);
+    line-height: 133%;
+    color: var(--grey-secondary-color);
+}
+
+h5 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    @include fluid-text(20, 16);
+    line-height: 143%;
+    letter-spacing: 0.14em;
+}
+
+h6 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    color: var(--000000);
+}
+
+a {
+    font-family: var(--font-family);
+    @include fluid-text(18, 14);
+    text-transform: uppercase;
+}
+
+span {
+    font-family: var(--secondary-family);
+    @include fluid-text(18,14);
+    text-transform: uppercase;
+}
+
+button {
+    font-family: var(--font-family);
+    @include fluid-text(15,12);
+    text-transform: uppercase;
+}
+
+.button {
+    background-color: var(--orange-primary-color);
+    color: var(--pink-primary-color);
+    padding: 14px 30px;
+    transition: 0.3s all ease-in;
+    @include hover {
+        background-color: var(--hover-pink);
+    }
+}
+
+.button--transparent {
+    background-color: transparent;
+    color: #000;
+    @include hover {
+        background-color: var(--hover-grey);
+    }
+}
+
+.link {
+    transition: 0.3s all ease-in;
+    @include hover {
+        background-color: var(--hover-grey);
+    }
+}
+
+.section--colored {
+    background-color: var(--pink-primary-color)
+}
+
+@import 
+    'blocks/header',
+    'blocks/overlay',
+    'blocks/hero',
+    'blocks/benefits',
+    'blocks/features',
+    'blocks/main-information',
+    'blocks/call-to-action',
+    'blocks/news-section',
+    'blocks/community-highlights',
+    'blocks/footer';

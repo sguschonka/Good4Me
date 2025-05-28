@@ -1,0 +1,144 @@
+.footer {
+  background-color: var(--pink-primary-color);
+  padding-top: 77px;
+  padding-bottom: 5px;
+
+  @include mobile {
+    padding-top: 25px;
+  }
+
+  .footer__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include desktop-above {
+      border-bottom: 1px solid var(--hover-grey);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-inline: 140px;
+      align-items: flex-start;
+    }
+
+    .footer__navs-container {
+
+      .footer__navs-title {
+        margin-bottom: 13px;
+
+        @include mobile {
+          margin-bottom: 5px;
+        }
+      }
+
+      .footer__navs-list {
+
+        .footer__navs-item {
+
+          .footer__navs-link {
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 206%;
+            color: var(--grey-nobel-color);
+            text-transform: none;
+
+            @include mobile {
+              line-height: 150%;
+            }
+          }
+        }
+      }
+    }
+
+    .footer__logo {
+      margin-bottom: 10px;
+    }
+
+    .footer__company-catchword {
+      text-align: center;
+      width: 330px;
+
+      @include tablet {
+        width: 150px;
+      }
+    }
+
+    .footer__subscribe-form {
+
+      
+      fieldset {
+        text-align: center;
+        width: 570px;
+
+        @include tablet {
+          width: 200px;
+        }
+      }
+
+      .subscribe-form__subtitle {
+        margin-bottom: 32px;
+
+        @include mobile {
+          margin-bottom: 16px;
+        }
+      }
+
+      legend {
+        font-size: 26px;
+        margin-bottom: 11px;
+        font-family: var(--font-family);
+      }
+
+      .subscribe-form__subscribe-input {
+        width: 400px;
+        border-bottom: 1px solid #000;
+
+        @include mobile {
+          width: 200px;
+        }
+      }
+
+      .subscribe-form__subscribe-input::placeholder {
+        color: var(--grey-nobel-color);
+        font-family: var(--font-family);
+        font-size: 14px;
+        margin-bottom: 13px;
+      }
+      
+      .subscribe-form__submit-button {
+        color: var(--orange-primary-color);
+      }
+    }
+  }
+
+  .footer__etc-container {
+    margin-block: 27px;
+    margin-inline: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include tablet {
+      flex-direction: column;
+      margin-inline: 20px;
+    }
+
+    .etc__company-name-colored {
+      color: var(--orange-primary-color);
+    }
+    
+    .etc__soc1als-list {
+      display: flex;
+      gap: 20px;
+    }
+
+    .etc-soc1al-item {
+      
+      .soc1al__link {
+        padding: 0px;
+      }
+    }
+  }
+}

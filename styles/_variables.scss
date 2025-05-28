@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/jost-semibold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('../fonts/WorkSans-Regular.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --orange-primary-color: #f6623e;
+    --grey-secondary-color: #454545;
+    --grey-nobel-color: #9d9d9d;
+    --pink-primary-color: #fff8f6; 
+
+    --hover-pink: #c54d30;
+    --hover-grey: #d3d1d1;
+
+    --font-family: 'Jost';
+    --second-family: 'Worksans';
+}

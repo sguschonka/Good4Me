@@ -1,0 +1,52 @@
+.main-information {
+    margin-bottom: 105px;
+    background-color: var(--pink-primary-color);
+    border-bottom-left-radius: 200px;
+
+    .main-information__image {
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    @include mobile {
+        border-radius: 0px;
+    }
+
+    .main-information__inner {
+        @include mobile {
+            padding: 30px 0px;
+        }
+
+        padding: 90px 0px;
+        text-align: center;
+
+        .main-information__title {
+            line-height: 105%;
+        }
+
+        .main-information__subtitle {
+            margin-top: 10px;
+            line-height: 160%;
+        }
+    }
+
+    .main-information__list {
+    
+        .main-information__list-item {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 144%;
+            color: var(--orange-primary-color);
+        }
+    }
+
+    @include tablet-above {
+        .list--mobile {
+
+            display: none;
+        }
+    }
+}

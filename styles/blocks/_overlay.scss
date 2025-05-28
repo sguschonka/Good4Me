@@ -1,0 +1,49 @@
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 300px;
+    height: 100vh;
+    max-height: 100%;
+    margin: 0;
+    left: auto;
+    right: 0;
+    overflow-y: auto;
+
+    box-sizing: border-box;
+
+    .mobile-overlay::backdrop {
+        background: var(--grey-secondary-color);
+      }
+      
+      .menu-content {
+        padding: 20px;
+        height: 100%;
+      }
+
+      .mobile-overlay__close-button {
+        @include fluid-text(54, 40);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: var(--grey-secondary-color);
+        border: none;
+        cursor: pointer;
+      }
+      
+      .menu-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 40px;
+      }
+
+      .link--colored {
+        color: var(--orange-primary-color);
+    }
+}
+
+@keyframes move-to-left{
+  100% {
+    translate: -75deg;
+  }
+}
