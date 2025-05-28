@@ -849,6 +849,12 @@ button {
 }
 
 @media (max-width: 767px) {
+  .news-section {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 767px) {
   .news-section .news__card {
     display: -webkit-box;
     display: -ms-flexbox;

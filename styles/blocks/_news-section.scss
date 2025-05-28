@@ -8,6 +8,10 @@
         margin-bottom: 50px;
     }
 
+    @include mobile {
+        margin-bottom: 100px;
+    }
+
     .news__card {
         
         @include mobile {
