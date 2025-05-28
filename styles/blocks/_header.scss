@@ -11,6 +11,15 @@
         justify-content: space-around;
         align-items: center;
 
+        .header__logo {
+            font-size: 30px;
+            margin-left: 10px;
+
+            @include mobile {
+                font-size: 24px;
+            }
+        }
+
         @include mobile {
             justify-content: space-between;
         }
@@ -80,6 +89,7 @@
         }
 
     .header__button {
+        padding: 8px;
         transition: 0.2s all ease;
     }
 }

@@ -64,6 +64,10 @@
         padding-top: 240px;
         background-color: var(--pink-primary-color);
 
+        @include tablet {
+            padding-bottom: 30px;
+        }
+
         @include mobile {
             padding-top: 100px;
             padding-bottom: 20px;

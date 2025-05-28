@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 
     @include desktop-above {
       border-bottom: 1px solid var(--hover-grey);
@@ -110,6 +111,8 @@
       
       .subscribe-form__submit-button {
         color: var(--orange-primary-color);
+        padding: 10px 20px;
+        margin: 10px 0px;
       }
     }
   }

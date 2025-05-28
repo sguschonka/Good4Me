@@ -1,5 +1,8 @@
 .call-to-action {
     .slider__text-container {
+        box-sizing: border-box;
+        width: 0 auto;
+        padding-inline: 25px;
         display: flex;
         flex-direction: column;
         gap: 33px;
@@ -53,6 +56,7 @@
             .slider__price-wrapper {
                 display: flex;
                 gap: 23px;
+                justify-content: center;
 
                 .price__actually {
                     color: var(--orange-primary-color);

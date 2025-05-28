@@ -4,6 +4,10 @@
     align-items: center;
     margin-bottom: 120px;
 
+    @include tablet {
+        margin-bottom: 50px;
+    }
+
     .news__card {
         
         @include mobile {
